@@ -18,6 +18,7 @@ namespace ClassRoomNet60
         {
             Name = name;
             BirthMonth = birthMonth;
+                // Der er kun 12 måneder. Hvis man angiver noget under 1 eller over 12, så får man en fejlbesked :)
                 if (birthMonth < 1 || birthMonth > 12)
                 {
                     throw new ArgumentException("Birth month must be between 1 and 12");
@@ -26,7 +27,6 @@ namespace ClassRoomNet60
         }
 
         // Metoder
-
         public string Season()
         {
             if (BirthMonth == 12 || BirthMonth == 1 || BirthMonth == 2)
