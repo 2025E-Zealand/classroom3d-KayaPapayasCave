@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassRoomNet60
 {
-    public class Classroom
+    internal class Classroom
     {
         // Properties
         public string ClassName { get; set; }
@@ -16,6 +16,8 @@ namespace ClassRoomNet60
         // Constructor
         public Classroom()
         {
+            StudentList = new List<Student>();
         }
+
     }
 }

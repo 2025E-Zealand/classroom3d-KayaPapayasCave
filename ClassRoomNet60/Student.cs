@@ -18,7 +18,33 @@ namespace ClassRoomNet60
         {
             Name = name;
             BirthMonth = birthMonth;
+                if (birthMonth < 1 || birthMonth > 12)
+                {
+                    throw new ArgumentException("Birth month must be between 1 and 12");
+                }
             Birthday = birthday;
+        }
+
+        // Metoder
+
+        public string Season()
+        {
+            if (BirthMonth == 12 || BirthMonth == 1 || BirthMonth == 2)
+            {
+                return "Winter";
+            }
+            else if (BirthMonth == 3 || BirthMonth == 4 || BirthMonth == 5)
+            {
+                return "Spring";
+            }
+            else if (BirthMonth == 6 || BirthMonth == 7 || BirthMonth == 8)
+            {
+                return "Summer";
+            }
+            else
+            {
+                return "Fall";
+            }
         }
     }
 }
