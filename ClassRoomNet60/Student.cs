@@ -9,9 +9,9 @@ namespace ClassRoomNet60
     public class Student
     {
         // Properties
-        public string Name { get; set; }
-        public int BirthMonth { get; set; }
-        public int Birthday { get; set; }
+        public string Name { get; private set; }
+        public int BirthMonth { get; private set; }
+        public int Birthday { get; private set; }
 
         // Constructor
         public Student(string name, int birthMonth, int birthday)
