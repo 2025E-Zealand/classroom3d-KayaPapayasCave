@@ -6,7 +6,6 @@ Classroom Hold3D = new Classroom()
 {
     ClassName = "3D",
     SemesterStart = new DateTime(2025, 08, 25)
-
 };
 
 // To objekter af Student oprettes :-)

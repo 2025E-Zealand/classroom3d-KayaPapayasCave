@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassRoomNet60
 {
-    internal class Classroom
+    public class Classroom
     {
         // Properties
         public string ClassName { get; set; }
